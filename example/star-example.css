@@ -1,0 +1,18 @@
+.container {
+  margin: 20px auto;
+  width: 400px;
+  height: 400px;
+  background: #3399ff;
+  position: relative;
+}
+
+.circle {
+	position: absolute;
+	width: 400px;
+	height: 400px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	border: 1px solid #ffffff;
+}

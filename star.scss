@@ -1,0 +1,43 @@
+@mixin set_transform_origin() {
+  // 1 / (1 + sin(54deg)) = 0.552 
+  -o-transform-origin: 50% 55.2%;
+  -ms-transform-origin: 50% 55.2%;
+  -webkit-transform-origin: 50% 55.2%;
+  -moz-transform-origin: 50% 55.2%;
+  transform-origin: 50% 55.2%;
+}
+
+@mixin transform($transX, $transY, $deg) {
+  -ms-transform: translate($transX, $transY) rotate($deg);
+  -webkit-transform: translate($transX, $transY) rotate($deg);
+  transform: translate($transX, $transY) rotate($deg);
+}
+
+@mixin fill_color($color) {
+  border-bottom: 0.691em solid $color;     // cos(18deg) * tan(36deg) = 0.691 
+  border-left: 0.951em solid transparent;  // cos(18deg) = 0.951 
+  border-right: 0.951em solid transparent;
+}
+
+.star {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 200px;  // the radius of Circumcircle 
+  @include set_transform_origin();
+  @include transform(-50%, -55.2%, 36deg);
+  @include fill_color(#ffff11);
+  &:before, &:after{
+    content: '';
+    position: absolute;
+    display: block;
+    @include set_transform_origin();
+    @include fill_color(#ffff11);
+  }
+  &:before {
+    @include transform(-50%, 0, -72deg);
+  }
+  &:after {
+    @include transform(-50%, 0, 72deg);
+  }
+}

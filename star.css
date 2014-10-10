@@ -1,0 +1,38 @@
+.star {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 200px;
+  -o-transform-origin: 50% 55.2%;
+  -ms-transform-origin: 50% 55.2%;
+  -webkit-transform-origin: 50% 55.2%;
+  -moz-transform-origin: 50% 55.2%;
+  transform-origin: 50% 55.2%;
+  -ms-transform: translate(-50%, -55.2%) rotate(36deg);
+  -webkit-transform: translate(-50%, -55.2%) rotate(36deg);
+  transform: translate(-50%, -55.2%) rotate(36deg);
+  border-bottom: 0.691em solid #ffff11;
+  border-left: 0.951em solid transparent;
+  border-right: 0.951em solid transparent; }
+  .star:before, .star:after {
+    content: '';
+    position: absolute;
+    display: block;
+    -o-transform-origin: 50% 55.2%;
+    -ms-transform-origin: 50% 55.2%;
+    -webkit-transform-origin: 50% 55.2%;
+    -moz-transform-origin: 50% 55.2%;
+    transform-origin: 50% 55.2%;
+    border-bottom: 0.691em solid #ffff11;
+    border-left: 0.951em solid transparent;
+    border-right: 0.951em solid transparent; }
+  .star:before {
+    -ms-transform: translate(-50%, 0) rotate(-72deg);
+    -webkit-transform: translate(-50%, 0) rotate(-72deg);
+    transform: translate(-50%, 0) rotate(-72deg); }
+  .star:after {
+    -ms-transform: translate(-50%, 0) rotate(72deg);
+    -webkit-transform: translate(-50%, 0) rotate(72deg);
+    transform: translate(-50%, 0) rotate(72deg); }
+
+/*# sourceMappingURL=star.css.map */
