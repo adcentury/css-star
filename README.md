@@ -13,13 +13,13 @@ The position of the star is set by the center of it (which is also the center of
 
 - load css file
 
-```
+```html
 <link rel="stylesheet" href="star.css">
 ```
 
 - generate star with a single div
 
-```
+```html
 <div class="star"></div>
 ```
 
