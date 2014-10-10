@@ -7,16 +7,19 @@ The position of the star is set by the center of it ( which is also the center o
 
 [Example](http://codepen.io/leilei/pen/lGyjo?editors=110) is available at [my CodePen](http://codepen.io/leilei/public/)
 
-Usage
------
+## Usage
 
-1. copy **star.css** into your project directory
-2. load css file 
-```html
+- copy **star.css** into your project directory
+
+- load css file
+
+```
 <link rel="stylesheet" href="star.css">
 ```
-3. generate star with a single div
-```html
+
+- generate star with a single div
+
+```
 <div class="star"></div>
 ```
 
