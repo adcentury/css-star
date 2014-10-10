@@ -9,18 +9,28 @@ The position of the star is set by the center of it (which is also the center of
 
 ## Usage
 
-- copy **star.css** into your project directory
+- Copy **star.css** into your project directory
 
-- load css file
+- Load css file in your `<head>` label
 
 ```html
 <link rel="stylesheet" href="star.css">
 ```
 
-- generate star with a single div
+- Generate star with a single div
 
 ```html
-<div class="star"></div>
+<div class="star" id="myStar"></div>
 ```
 
-Enjoy it!
+- Set the star's center position and circumcircle radius by css. ()
+
+```css
+#myStar {
+	left: 50px;
+	top: 50px;
+	font-size: 50px;	/* use font-size to set the radius */
+}
+```
+
+- Enjoy it!
